@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAF79BC21EC0AA91005A3281 /* DownLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF79BC11EC0AA91005A3281 /* DownLoaderManager.m */; };
+		DAF79BC51EC0AAC3005A3281 /* NSString+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF79BC41EC0AAC3005A3281 /* NSString+Download.m */; };
 		E77F77401EBC454900CFABC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E77F773F1EBC454900CFABC7 /* main.m */; };
 		E77F77431EBC454900CFABC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77F77421EBC454900CFABC7 /* AppDelegate.m */; };
 		E77F77461EBC454900CFABC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77F77451EBC454900CFABC7 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DAF79BC01EC0AA91005A3281 /* DownLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoaderManager.h; sourceTree = "<group>"; };
+		DAF79BC11EC0AA91005A3281 /* DownLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoaderManager.m; sourceTree = "<group>"; };
+		DAF79BC31EC0AAC3005A3281 /* NSString+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Download.h"; sourceTree = "<group>"; };
+		DAF79BC41EC0AAC3005A3281 /* NSString+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Download.m"; sourceTree = "<group>"; };
 		E77F773B1EBC454900CFABC7 /* 文件下载测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "文件下载测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77F773F1EBC454900CFABC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E77F77411EBC454900CFABC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,10 +79,14 @@
 				E77F774C1EBC454900CFABC7 /* LaunchScreen.storyboard */,
 				E77F774F1EBC454900CFABC7 /* Info.plist */,
 				E77F773E1EBC454900CFABC7 /* Supporting Files */,
+				DAF79BC01EC0AA91005A3281 /* DownLoaderManager.h */,
+				DAF79BC11EC0AA91005A3281 /* DownLoaderManager.m */,
 				E77F77551EBC456700CFABC7 /* DownLoader.h */,
 				E77F77561EBC456700CFABC7 /* DownLoader.m */,
 				E77F77581EBC487300CFABC7 /* DownLoaderFileTool.h */,
 				E77F77591EBC487300CFABC7 /* DownLoaderFileTool.m */,
+				DAF79BC31EC0AAC3005A3281 /* NSString+Download.h */,
+				DAF79BC41EC0AAC3005A3281 /* NSString+Download.m */,
 			);
 			path = "文件下载测试";
 			sourceTree = "<group>";
@@ -116,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = xpchina2003;
+				ORGANIZATIONNAME = GJG;
 				TargetAttributes = {
 					E77F773A1EBC454900CFABC7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -164,7 +174,9 @@
 				E77F77461EBC454900CFABC7 /* ViewController.m in Sources */,
 				E77F77431EBC454900CFABC7 /* AppDelegate.m in Sources */,
 				E77F77571EBC456700CFABC7 /* DownLoader.m in Sources */,
+				DAF79BC51EC0AAC3005A3281 /* NSString+Download.m in Sources */,
 				E77F77401EBC454900CFABC7 /* main.m in Sources */,
+				DAF79BC21EC0AA91005A3281 /* DownLoaderManager.m in Sources */,
 				E77F775A1EBC487300CFABC7 /* DownLoaderFileTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +336,7 @@
 				E77F77541EBC454900CFABC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

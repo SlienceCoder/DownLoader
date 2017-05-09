@@ -11,9 +11,19 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) DownLoader *downloader;
+@property (nonatomic, weak) NSTimer *timer;
 @end
 
 @implementation ViewController
+- (NSTimer *)timer
+{
+    if (!_timer) {
+        NSTimer *timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+        _timer = timer;
+    }
+    return _timer;
+}
 - (DownLoader *)downloader
 {
     if (_downloader==nil) {
@@ -24,11 +34,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSURL *url = [NSURL URLWithString:@"http://free2.macx.cn:8281/tools/other5/jietu2.dmg"];
-    [self.downloader downloadWithUrl:url];
+    NSURL *url = [NSURL URLWithString:@"http://free2.macx.cn:8281/tools/photo/Sip44.dmg"];
+//    [self.downloader downloadWithUrl:url];
+    [self.downloader downLoader:url downLoadInfo:^(long long totalSize) {
+        
+    } progress:^(float pregress) {
+        
+    } success:^(NSString *cachePath) {
+        
+    } faild:^{
+        
+    }];
+    
+    [self.downloader setStateChangeInfo:^(DownLoadState state){
+    
+    }];
 }
 
 @end
